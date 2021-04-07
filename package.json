@@ -1,0 +1,13 @@
+{
+  "name": "seo-para-apps-javascript",
+  "author": "Kevin Rodriguez <_@kevinrodriguez.io>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "devDependencies": {
+    "mdx-deck": "^4.1.1"
+  }
+}

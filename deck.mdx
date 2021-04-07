@@ -1,0 +1,236 @@
+import { themes } from "mdx-deck";
+export const theme = themes.future;
+
+# SEO Para aplicaciones basadas en Javascript
+
+## Por Kevin Rodríguez
+
+- Twitter: @misterkevin_js
+- Github: kevinrodriguez-io
+
+---
+
+# Acerca de mí ⚛
+
+- Technical Leader
+- Community Coordinator @ React Costa Rica 🇨🇷
+- TypeScript / React / React-Native / GraphQL / Flutter / Firebase / Lo que se necesite
+
+---
+
+# SEO
+
+<ul>
+  <Steps>
+    <li>Algunos dicen dominarlo</li>
+    <li>Otros lo ignoran</li>
+    <li>No muchas personas saben realmente cómo funciona en la modernidad</li>
+  </Steps>
+</ul>
+
+---
+
+<div
+  style={{
+    position: "relative",
+    left: 0,
+    top: 0,
+    bottom: 0,
+    right: 0,
+    width: "100vw",
+    height: "100vh",
+  }}
+>
+  <div
+    style={{
+      backgroundImage:
+        "url(https://images.unsplash.com/photo-1414690165279-49ab0a9a7e66?fit=crop&w=250&q=80)",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      filter: "blur(10px) brightness(50%)",
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      zIndex: 1,
+    }}
+  />
+  <div
+    style={{
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      zIndex: 2,
+      display: "grid",
+      placeContent: "center",
+    }}
+  >
+    <h1>Tipos de Web Apps basadas en Javascript</h1>
+    <ul>
+      <li>
+        SPA (Single Page Application) y su evolución a PWA (Clásico
+        Angular/React/Vue app)
+      </li>
+      <li>
+        Full-Stack Apps monolíticas en Node.JS (Express + Pug / Handlebars /
+        templating)
+      </li>
+      <li>
+        SSR - Server-Side Rendered apps (Se generan desde el servidor bajo
+        request/response)
+      </li>
+      <li>
+        SSG - Server-Side Generated apps (Se generan desde el servidor en un
+        proceso de build unico)
+      </li>
+      <li>
+        Probablemente alguien por ahí esté inventando un nuevo concepto, ya
+        saben como es Javascript
+      </li>
+    </ul>
+  </div>
+</div>
+
+---
+
+# Hablemos un poco de Googlebot
+
+---
+
+# Crawling
+
+Es el proceso en el que un bot traversa la web buscando contenido.
+Trata de ser lo más rápido y expedito posible, dejando "para después"
+todo aquel contenido que necesite algún tipo de ejecución de código
+en el navegador.
+
+## Básicamente
+
+- Es rápido.
+- Pasa por alto algunos detalles.
+- Lleva más años de existir.
+- Tiene que traversar + 130 Trillones de documentos Web.
+
+---
+
+# Indexing y Rendering
+
+Que un sitio sea indexable significa que puede ser "entendido" por search
+crawlers como Google y se trata de un proceso posterior al crawling que se
+encarga de ejecutar Javascript, de medir la carga initial del sitio web, además de
+tomar otras métricas para así ejecutar un render inicial y además buscar
+contenido o enlaces dentro de la página que está siendo indexada.
+
+- Sucede de manera eventual
+- Se ejecuta en una version antigua de Chromium que no soporta ES6+ (Chrome 41 [2015])
+- Despues de renderear, que depende de la carga de Googlebot, se vuelve a indexar
+
+---
+
+# Hablemos de la web moderna
+
+---
+
+# Mitos y realidades
+
+---
+
+# Mito #1
+
+> "El SEO no debería ser una prioridad a la hora de crear un producto."
+
+La realidad es que dependiendo del caso de uso, sitios que viven
+tras una barrera de password o autenticación podrían no requerir SEO,
+sin embargo, cualquier contenido de caracter público es candidato
+a ser importante en cuanto a SEO, en especial para sitios como:
+
+- Noticieros
+- E-Commerce
+- Redes Sociales
+- Wikis
+- Y la lista podría seguir
+
+---
+
+# Mito #2
+
+> "Google es tan sofisticado que no hay
+> que preocuparse porque mi contenido se pierda"
+
+La realidad es que hay muchas aristas por las que tu contenido
+se podría estar perdiendo.
+
+---
+
+# Mito #3
+
+> "Las apps hechas con frameworks como Angular/React/Vue no están pensadas para SEO"
+
+La realidad es que sí, y existen "sabores" y/o alternativas que permiten llevar esto
+mas allá al incluir SSG, SSR y técnicas como prerendering. Hablaremos de esto mas
+adelante.
+
+---
+
+# Mito #4
+
+> "Si cambio mi e-commerce para que cargue
+> todo el contenido en un infinite scroll, reemplazando mis
+> antiguas páginas web de detalle, mis productos van a ser
+> indexados de igual manera."
+
+<img
+  alt="Pallbeares"
+  src="https://media.giphy.com/media/j6ZlX8ghxNFRknObVk/giphy.gif"
+  style={{
+    height: "200px"
+  }}
+/>
+
+---
+
+# Errores que se ven allá afuera en la selva
+
+...Y que tal vez la mayoría hemos cometido
+
+---
+
+# El clásico:
+
+INSERTE SPA SHARE ACA
+
+---
+
+# Demo
+
+---
+
+# Frameworks y tecnologías
+
+---
+
+# Optimizaciones baratas para apps modernas
+
+---
+
+# Optimizaciones más caras para apps modernas
+
+---
+
+# Optimizaciones
+
+- Status codes
+- URLS largas son feas para las personas y para los robots, igual que XML.
+- robots.txt
+- sitemap.xml
+- rel="canonical"
+
+---
+
+# Datos curiosos
+
+-
