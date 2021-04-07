@@ -1,4 +1,4 @@
-import { themes } from "mdx-deck";
+import { themes } from 'mdx-deck';
 export const theme = themes.future;
 
 # SEO Para aplicaciones basadas en Javascript
@@ -32,24 +32,24 @@ export const theme = themes.future;
 
 <div
   style={{
-    position: "relative",
+    position: 'relative',
     left: 0,
     top: 0,
     bottom: 0,
     right: 0,
-    width: "100vw",
-    height: "100vh",
+    width: '100vw',
+    height: '100vh',
   }}
 >
   <div
     style={{
       backgroundImage:
-        "url(https://images.unsplash.com/photo-1414690165279-49ab0a9a7e66?fit=crop&w=250&q=80)",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      filter: "blur(10px) brightness(50%)",
-      position: "absolute",
+        'url(https://images.unsplash.com/photo-1414690165279-49ab0a9a7e66?fit=crop&w=250&q=80)',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      filter: 'blur(10px) brightness(50%)',
+      position: 'absolute',
       top: 0,
       left: 0,
       right: 0,
@@ -59,14 +59,14 @@ export const theme = themes.future;
   />
   <div
     style={{
-      position: "absolute",
+      position: 'absolute',
       top: 0,
       left: 0,
       right: 0,
       bottom: 0,
       zIndex: 2,
-      display: "grid",
-      placeContent: "center",
+      display: 'grid',
+      placeContent: 'center',
     }}
   >
     <h1>Tipos de Web Apps basadas en Javascript</h1>
@@ -187,21 +187,9 @@ adelante.
   alt="Pallbeares"
   src="https://media.giphy.com/media/j6ZlX8ghxNFRknObVk/giphy.gif"
   style={{
-    height: "200px"
+    height: '200px',
   }}
 />
-
----
-
-# Errores que se ven allá afuera en la selva
-
-...Y que tal vez la mayoría hemos cometido
-
----
-
-# El clásico:
-
-INSERTE SPA SHARE ACA
 
 ---
 
@@ -209,28 +197,76 @@ INSERTE SPA SHARE ACA
 
 ---
 
+# SSG vs SSR
+
+- Ambos tienen sus pros y contras.
+- SSG Genera ahead of time pero puede resultar caro reconstruir todo el sitio en cada cambio.
+- SSG Es mas intenso en recursos en sitios grandes (Martillo/Pica).
+- SSR Permite controlar status codes (Redirects, Not-Found, etc).
+- SSR Necesita infraestructura de por medio.
+- SSR es mas apto para manejo de cookies y escenarios complejos.
+
+Y prerender?
+
+- Prerender es la opcion mas barata para muchisimos escenarios y luce mas como SSG.
+
+---
+
 # Frameworks y tecnologías
+
+---
+
+# Angular
+
+- Scully
+- Angular Universal
+
+---
+
+# React
+
+- Next
+- Gatsby
+- React Prerender
+- Redwood JS
+- Y la lista podria seguir
+
+---
+
+# Vue
+
+- Gridsome
+- Nuxt
+- VuePress
 
 ---
 
 # Optimizaciones baratas para apps modernas
 
+- robots.txt - Es un archivo que permite decirle a los crawlers que contenido no deseas indexar, util para deduplicar.
+- sitemap.xml - Es un archivo que le sugiere a un web crawler de que manera traversar tu sitio, puede agilizar el proceso.
+- Manejo de status codes - Importantisimo!
+- URL Cortas - Al igual que las clases en el codigo, las url largas confunden a las personas y a los bots.
+- Usa rel="canonical" para deduplicar contenido.
+
 ---
 
 # Optimizaciones más caras para apps modernas
 
----
-
-# Optimizaciones
-
-- Status codes
-- URLS largas son feas para las personas y para los robots, igual que XML.
-- robots.txt
-- sitemap.xml
-- rel="canonical"
+- Mover tu app para que use SSR o SSG!
+- Cambiar eventos interactivos por paginas, o usar ambos! (Facebook post + timeline es un ejemplo).
 
 ---
 
-# Datos curiosos
+# Preguntas
 
--
+---
+
+# Gracias
+
+Kevin Rodriguez <_@kevinrodriguez.io> 🚀
+
+GH: kevinrodriguez-io
+Twitter: @misterkevin_js
+
+
